@@ -1,0 +1,8 @@
+{
+    "test": {
+        "mongoURI": "mongodb://127.0.0.1:27017/phonebook"
+    },
+    "development": {
+        "mongoURI": "mongodb://127.0.0.1:27017/phonebook"
+    }
+}

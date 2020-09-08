@@ -1,31 +1,14 @@
-# Phonebook Service
-
-Express Based Service to handle basic phone book needs. Includes endpoints to handle **Users**, **UserAuth** & **Users Contacts**.
-
-## Requirements
-
-* [node & npm](https://nodejs.org/en/)
-* [mongodb](https://www.mongodb.com/download-center)
-
 ## Installation
 Clone the repository and run:
 
 * `npm install` to install the dependencies
 
-* `npm start` or `node index.js` to start the server
+* `npm start` to start the server
 
-## Running Tests
-To run the test cases, run:
-* `npm test`
 
-## Documentation
-To get the list of available endpoints & details, start the app server as mentioned above and click on: [PhoneBook API Doc](http://localhost:3000/api-docs/) or paste the below link in your browser:
-
-http://localhost:3000/api-docs/
-
-## Versioning
-
-Version 1.0.0
-## Authors
-
-* *Mohammed Amir Ansari** - *Initial work* - [Mohammed Amir Ansari](https://github.com/amiransari2310)
+API EndPoints:
+GET `http://localhost:3000/contacts` - listing all users.
+POST `http://localhost:3000/contacts` - create a new contact. payload: `{ name: 'string', number: 'string' }`
+GET `http://localhost:3000/contacts/:number` - to get a specific contact details
+PUT `http://localhost:3000/contacts/:number` - to update a specific contact details. payload: `{ name: 'string', number: 'string' }`
+DELETE `http://localhost:3000/contacts/:number` - to delete a specific contact from list.
